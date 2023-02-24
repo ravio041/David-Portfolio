@@ -12,7 +12,24 @@
 */
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 16px
+    font-size: 16px;
+    background-image: linear-gradient(to right, rgb(20, 0, 58),#1e003d,rgb(19, 0, 129), rgb(20, 0, 58));
+}
+
+#divCanvas{
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 1550px;
+    box-shadow: 5px 10px;
+  /*  border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000;*/
+    
 }
 
 body.active {
@@ -78,7 +95,7 @@ header {
 
 header ul {
     display: inline-block;
-    background: #ffffff;
+    background: #000000;
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -92,13 +109,13 @@ header li {
 
 header a {
     display: block;
-    color: #000000;
+    color: #ffffff;
     font-size: 25px;
     padding: 15px
 }
 
 header a:hover {
-    color: #000000;
+    color: #ffffff;
     text-decoration: underline;
     /*background: #ffffff; */
     border-radius: 20px
@@ -211,7 +228,7 @@ footer {
 }
 
 .social a:hover {
-    color: #eca51d
+    color: #ffffff
 }
 
 .btn-rounded-white {
@@ -248,17 +265,19 @@ footer {
 .heading:after {
     position: absolute;
     content: '';
-    top: 100%;
+    top: 110%;
     height:2px;
-    width: 50px;
+    width: 70px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #3498db
+    background: #ff9100
 }
 
 .background-alt {
-    background: #f3b33d
+    
+    background-image: linear-gradient(to right,rgb(0, 0, 0),#1e003d,rgb(19, 0, 129), rgb(0, 0, 0));
+
 }
 
 #lead {
@@ -310,9 +329,12 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(252, 177, 64, 0.473);
+    background: rgba(179, 97, 255, 0.514);
     z-index: 1;
-    border-bottom: 3px solid #000000
+   /* border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000;*/
 }
 
 #lead-down {
@@ -333,7 +355,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #ffae00;
+    border: 3px solid #cccccc;
     text-align: center
 }
 
@@ -342,6 +364,8 @@ footer {
     animation-iteration-count: infinite;
     padding-top: 5px
 }
+
+
 
 @keyframes pulsate {
     0% {
@@ -358,11 +382,13 @@ footer {
 }
 
 #about {
+    background: #fff;
     padding: 75px 15px;
     border-bottom: 3px solid #000000
 }
 
 #goal {
+    background: #fff;
     padding: 75px 15px;
     border-bottom: 3px solid #000000
 }
@@ -392,7 +418,7 @@ footer {
 }
 
 #experience h2 {
-    color: #374054
+    color: #ffffff
 }
 
 #experience-timeline {
@@ -410,7 +436,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #000000;
+    background: #ff9100;
     z-index: 0
 }
 
@@ -419,8 +445,8 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #000000;
-    background: linear-gradient(to bottom, #3d3d3d, rgba(52, 152, 219, 0));
+    background: #ff9100;
+    background: linear-gradient(to bottom, #ff9100, rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px
 }
@@ -467,7 +493,7 @@ footer {
     color: #fff;
     width: 50px;
     height: 50px;
-    background: #3498db;
+    background: #ff9100;
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -486,11 +512,13 @@ footer {
     position: absolute;
     left: 0;
     top: 10px;
+    font-size: 20px;
     font-weight: 300;
-    color: #374054
+    color: #ffffff
 }
 
 #education {
+    background: #fff;
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center
@@ -546,7 +574,7 @@ footer {
 }
 
 #projects h2 {
-    color: #374054;
+    color: #ffffff;
     margin-bottom: 50px
 }
 
@@ -596,6 +624,7 @@ footer {
 }
 
 #skills {
+    background: #fff;
     padding: 50px 15px;
     text-align: center
 }
@@ -625,7 +654,7 @@ footer {
 
 #contact {
     padding: 50px 15px;
-    background: #ffd78e;
+    background: #000000;
     text-align: center
 }
 
@@ -648,37 +677,37 @@ footer {
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #ffa600;
-    color: #fff;
+    background: #bebebe;
+    color: #000000;
     transition: .5s ease all
 }
 
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-    color: #fff
+    color: #000000
 }
 
 #contact-form input:-moz-placeholder,
 #contact-form textarea:-moz-placeholder {
-    color: #fff;
+    color: #000000;
     opacity: 1
 }
 
 #contact-form input::-moz-placeholder,
 #contact-form textarea::-moz-placeholder {
-    color: #fff;
+    color: #000000;
     opacity: 1
 }
 
 #contact-form input:-ms-input-placeholder,
 #contact-form textarea:-ms-input-placeholder {
-    color: #fff
+    color: #000000
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #ffd000
+    background: #ffffff
 }
 
 #contact-form textarea {
@@ -857,6 +886,7 @@ footer {
 
     .education-block h3,
     .education-block span {
+        
         float: none
     }
 
