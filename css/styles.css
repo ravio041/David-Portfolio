@@ -12,7 +12,24 @@
 */
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 16px
+    font-size: 16px;
+    background-image: linear-gradient(to right, rgb(20, 0, 58),#1e003d,rgb(19, 0, 129), rgb(20, 0, 58));
+}
+
+#divCanvas{
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 1550px;
+    box-shadow: 5px 10px;
+  /*  border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000;*/
+    
 }
 
 body.active {
@@ -66,24 +83,24 @@ body.active {
 header {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5;
     right: 0;
     text-align: center;
     z-index: 10;
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-duration: 0.75s
+    animation-duration: 2.75s
 }
 
 header ul {
     display: inline-block;
-    background: #fff;
+    background: #000000;
     text-align: center;
     padding: 10px;
     margin: 0;
     border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px
+    border-bottom-left-radius: 20px
 }
 
 header li {
@@ -92,19 +109,20 @@ header li {
 
 header a {
     display: block;
-    color: #3498db;
-    padding: 10px
+    color: #ffffff;
+    font-size: 25px;
+    padding: 15px
 }
 
 header a:hover {
-    color: #217dbb;
-    text-decoration: none;
-    background: #eee;
-    border-radius: 4px
+    color: #ffffff;
+    text-decoration: underline;
+    /*background: #ffffff; */
+    border-radius: 20px
 }
 
 header a:focus {
-    color: #3498db;
+    color: #2c2c2c;
     text-decoration: none
 }
 
@@ -210,7 +228,7 @@ footer {
 }
 
 .social a:hover {
-    color: #3498db
+    color: #ffffff
 }
 
 .btn-rounded-white {
@@ -247,17 +265,19 @@ footer {
 .heading:after {
     position: absolute;
     content: '';
-    top: 100%;
-    height: 1px;
-    width: 50px;
+    top: 110%;
+    height:2px;
+    width: 70px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #3498db
+    background: #ff9100
 }
 
 .background-alt {
-    background: #f2f2f5
+    
+    background-image: linear-gradient(to right,rgb(0, 0, 0),#1e003d,rgb(19, 0, 129), rgb(0, 0, 0));
+
 }
 
 #lead {
@@ -274,10 +294,10 @@ footer {
 #lead-content {
     position: absolute;
     z-index: 10;
-    top: 50%;
-    left: 50%;
+    top: 80%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    text-align: center
+    text-align: left
 }
 
 #lead-content h1,
@@ -286,7 +306,7 @@ footer {
 }
 
 #lead-content h1 {
-    color: #fff;
+    color: #ffffff;
     font-weight: 900;
     font-size: 5em;
     text-transform: uppercase;
@@ -295,7 +315,7 @@ footer {
 }
 
 #lead-content h2 {
-    color: #a0cfee;
+    color: #ffffff;
     font-weight: 500;
     font-size: 2.25em;
     margin-bottom: 15px
@@ -309,8 +329,12 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
-    z-index: 1
+    background: rgba(179, 97, 255, 0.514);
+    z-index: 1;
+   /* border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000;*/
 }
 
 #lead-down {
@@ -321,7 +345,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff
+    color: #000000
 }
 
 #lead-down span {
@@ -331,7 +355,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #a0cfee;
+    border: 3px solid #cccccc;
     text-align: center
 }
 
@@ -340,6 +364,8 @@ footer {
     animation-iteration-count: infinite;
     padding-top: 5px
 }
+
+
 
 @keyframes pulsate {
     0% {
@@ -356,8 +382,15 @@ footer {
 }
 
 #about {
+    background: #fff;
     padding: 75px 15px;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 3px solid #000000
+}
+
+#goal {
+    background: #fff;
+    padding: 75px 15px;
+    border-bottom: 3px solid #000000
 }
 
 #about h2 {
@@ -365,6 +398,15 @@ footer {
 }
 
 #about p {
+    color: #8a7574;
+    margin: 0
+}
+
+#goal h2 {
+    color: #374054
+}
+
+#goal p {
     color: #74808a;
     margin: 0
 }
@@ -372,11 +414,11 @@ footer {
 #experience {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 3px solid #000000
 }
 
 #experience h2 {
-    color: #374054
+    color: #ffffff
 }
 
 #experience-timeline {
@@ -394,7 +436,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #3498db;
+    background: #ff9100;
     z-index: 0
 }
 
@@ -403,8 +445,8 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #3498db;
-    background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+    background: #ff9100;
+    background: linear-gradient(to bottom, #ff9100, rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px
 }
@@ -451,7 +493,7 @@ footer {
     color: #fff;
     width: 50px;
     height: 50px;
-    background: #3498db;
+    background: #ff9100;
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -470,11 +512,13 @@ footer {
     position: absolute;
     left: 0;
     top: 10px;
+    font-size: 20px;
     font-weight: 300;
-    color: #374054
+    color: #ffffff
 }
 
 #education {
+    background: #fff;
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center
@@ -530,7 +574,7 @@ footer {
 }
 
 #projects h2 {
-    color: #374054;
+    color: #ffffff;
     margin-bottom: 50px
 }
 
@@ -580,6 +624,7 @@ footer {
 }
 
 #skills {
+    background: #fff;
     padding: 50px 15px;
     text-align: center
 }
@@ -609,7 +654,7 @@ footer {
 
 #contact {
     padding: 50px 15px;
-    background: #3498db;
+    background: #000000;
     text-align: center
 }
 
@@ -632,37 +677,37 @@ footer {
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #1d6fa5;
-    color: #fff;
+    background: #bebebe;
+    color: #000000;
     transition: .5s ease all
 }
 
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-    color: #fff
+    color: #000000
 }
 
 #contact-form input:-moz-placeholder,
 #contact-form textarea:-moz-placeholder {
-    color: #fff;
+    color: #000000;
     opacity: 1
 }
 
 #contact-form input::-moz-placeholder,
 #contact-form textarea::-moz-placeholder {
-    color: #fff;
+    color: #000000;
     opacity: 1
 }
 
 #contact-form input:-ms-input-placeholder,
 #contact-form textarea:-ms-input-placeholder {
-    color: #fff
+    color: #000000
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #16527a
+    background: #ffffff
 }
 
 #contact-form textarea {
@@ -677,7 +722,7 @@ footer {
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
-    color: #3498db;
+    color: #000000;
     font-weight: 700;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: .5s ease all
@@ -694,7 +739,7 @@ footer {
 }
 
 .optional-section h2 {
-    color: #374054
+    color: #544837
 }
 
 .optional-section-block {
@@ -779,10 +824,18 @@ footer {
     }
 
     #about {
-        text-align: center
+        text-align: left
+    }
+
+    #goal {
+        text-align: left
     }
 
     #about p {
+        text-align: left
+    }
+
+    #goal p{
         text-align: left
     }
 }
@@ -833,6 +886,7 @@ footer {
 
     .education-block h3,
     .education-block span {
+        
         float: none
     }
 
