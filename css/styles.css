@@ -24,8 +24,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 1800px;
-        box-shadow: 5px 10px;
+        width: 1700px;
+        box-shadow: 5px 5px;
       /*  border-top: 3px solid #000000;
         border-right: 3px solid #000000;
         border-left: 3px solid #000000;
@@ -42,7 +42,7 @@ body {
         margin-right: auto;
         display: block;
         width: 1500px;
-        box-shadow: 5px 10px;
+        box-shadow: 5px 5px;
       /*  border-top: 3px solid #000000;
         border-right: 3px solid #000000;
         border-left: 3px solid #000000;
@@ -58,8 +58,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 1400px;
-        box-shadow: 5px 10px;
+        width: 1300px;
+        box-shadow: 5px 5px;
       /*  border-top: 3px solid #000000;
         border-right: 3px solid #000000;
         border-left: 3px solid #000000;
@@ -75,8 +75,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 1250px;
-        box-shadow: 5px 10px;
+        width: 1150px;
+        box-shadow: 5px 5px;
       /*  border-top: 3px solid #000000;
         border-right: 3px solid #000000;
         border-left: 3px solid #000000;
@@ -92,8 +92,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 1000px;
-        box-shadow: 5px 10px;
+        width: 950px;
+        box-shadow: 5px 5px;
       /*  border-top: 3px solid #000000;
         border-right: 3px solid #000000;
         border-left: 3px solid #000000;
@@ -111,7 +111,7 @@ body {
         margin-right: auto;
         display: block;
         width: 825px;
-        box-shadow: 5px 10px;
+        box-shadow: 5px 5px;
       /*  border-top: 3px solid #000000;
         border-right: 3px solid #000000;
         border-left: 3px solid #000000;
@@ -128,7 +128,7 @@ body {
         margin-right: auto;
         display: block;
         width: 685px;
-        box-shadow: 5px 10px;
+        box-shadow: 5px 5px;
       /*  border-top: 3px solid #000000;
         border-right: 3px solid #000000;
         border-left: 3px solid #000000;
@@ -145,7 +145,7 @@ body {
         margin-right: auto;
         display: block;
         width: 600px;
-        box-shadow: 5px 10px;
+        box-shadow: 5px 5px;
       /*  border-top: 3px solid #000000;
         border-right: 3px solid #000000;
         border-left: 3px solid #000000;
@@ -715,9 +715,10 @@ footer {
 
 .project-info {
     position: absolute;
-    top: 50%;
+    top: 40%;
+    text-align: left;
     transform: translateY(-50%);
-    margin-left: 300px;
+    margin-left: 350px;
     padding: 15px
 }
 
@@ -1015,6 +1016,7 @@ footer {
     .project-image {
         display: none
     }
+    
 
     .project-info {
         position: relative;
