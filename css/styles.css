@@ -91,7 +91,7 @@ header {
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-duration: 2.75s
+    animation-duration: 2s
 }
 
 header ul {
@@ -123,8 +123,9 @@ header a:hover {
 }
 
 header a:focus {
-    color: #2c2c2c;
-    text-decoration: none
+    color: #ffffff;
+    text-decoration: underline;
+   
 }
 
 header.active {
@@ -388,6 +389,14 @@ footer {
     border-bottom: 3px solid #000000
 }
 
+#interest {
+   
+    padding: 75px 15px;
+    border-bottom: 3px solid #000000
+}
+
+
+
 #goal {
     background: #fff;
     padding: 75px 15px;
@@ -400,6 +409,15 @@ footer {
 
 #about p {
     color: #8a7574;
+    margin: 0
+}
+
+#interest h2 {
+    color: #ffffff
+}
+
+#interest p {
+    color: #ffffff;
     margin: 0
 }
 
