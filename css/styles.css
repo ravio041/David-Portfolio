@@ -819,6 +819,69 @@ footer {
         margin-left: 70px
     }
 }
+@media only screen and (max-width: 1500px) {
+    #lead {
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+        padding: 100px 15px
+    }
+
+    #lead-content {
+        position: relative;
+        transform: none;
+        
+
+       
+   
+        top: 80%;
+        left: 40%;
+        transform: translate(-40%, +80%);
+        text-align: left
+    }
+
+    
+
+
+
+    #lead-content h1 {
+        font-size: 3em;
+    }
+
+    #lead-content h2 {
+        font-size: 1.75em;
+        margin-bottom: 15px
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #lead {
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+        padding: 100px 15px
+    }
+
+    #lead-content {
+        position: relative;
+        transform: none;
+        
+
+       
+   
+        top: 80%;
+        left: 40%;
+        transform: translate(-40%, +80%);
+        text-align: left
+    }
+
+    #lead-content h1 {
+        font-size: 3em;
+    }
+
+    #lead-content h2 {
+        font-size: 1.75em
+    }
+}
 
 @media only screen and (max-width: 992px) {
     #lead {
@@ -836,7 +899,7 @@ footer {
     }
 
     #lead-content h1 {
-        font-size: 3em
+        font-size: 3em;
     }
 
     #lead-content h2 {
@@ -845,6 +908,10 @@ footer {
 
     #about {
         text-align: left
+    }
+
+    #interest {
+        text-align:left;
     }
 
     #goal {
@@ -857,6 +924,10 @@ footer {
 
     #goal p{
         text-align: left
+    }
+
+    #interest p {
+        text-align: left;
     }
 }
 
@@ -889,7 +960,8 @@ footer {
     }
 
     #lead-content h1 {
-        font-size: 2em
+        font-size: 2em;
+       
     }
 
     #lead-content h2 {
@@ -932,13 +1004,26 @@ footer {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 520px) {
+    
+    #lead {
+        position: relative;
+        height: 100vh;
+        min-height: 350px;
+        max-height: 350px;
+        background: url(../images/sad-cat-2.png);
+        background-size: cover;
+        padding: 15px;
+        overflow: hidden
+    }
     #lead-content h1 {
-        font-size: 1.5em
+        font-size: 1.75em;
+        margin-top: 265px;
     }
 
     #lead-content h2 {
-        font-size: 1em
+        font-size: 1.25em;
+        margin-top: 1px;
     }
 
     #lead-content a {
