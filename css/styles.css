@@ -1011,14 +1011,15 @@ footer {
         height: 100vh;
         min-height: 350px;
         max-height: 350px;
-        background: url(../images/sad-cat-2.png);
+        background: url(../images/sad-cat.jpg);
         background-size: cover;
         padding: 15px;
         overflow: hidden
     }
     #lead-content h1 {
+
         font-size: 1.75em;
-        margin-top: 265px;
+        margin-top: 60%;
     }
 
     #lead-content h2 {
