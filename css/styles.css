@@ -13,7 +13,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    background-image: linear-gradient(to right, rgb(20, 0, 58),#1e003d,rgb(19, 0, 129), rgb(20, 0, 58));
+    background:rgb(255, 245, 189);
 }
 
 
@@ -27,7 +27,8 @@ body {
        
         display: block;
         width: 85%;
-        box-shadow: 5px 5px;
+        border: 1px solid;
+        box-shadow: 3px 3px ;
       
         
 }
@@ -96,7 +97,7 @@ header {
 
 header ul {
     display: inline-block;
-    background: #000000;
+    background: #D0DD97;
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -110,7 +111,7 @@ header li {
 
 header a {
     display: block;
-    color: #ffffff;
+    color: #000000;
     font-size: 25px;
     padding: 15px
 
@@ -231,7 +232,7 @@ footer {
 }
 
 .social a:hover {
-    color: #ffffff
+    color: #000000
 }
 
 .btn-rounded-white {
@@ -274,12 +275,12 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #ff9100
+    background: #000000
 }
 
 .background-alt {
     
-    background-image: linear-gradient(to right,rgb(0, 0, 0),#1e003d,rgb(19, 0, 129), rgb(0, 0, 0));
+    background: #F9DE79;
 
 }
 
@@ -332,7 +333,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(179, 97, 255, 0.514);
+    background: rgba(252, 248, 196, 0.199);
     z-index: 1;
    /* border-top: 3px solid #000000;
     border-right: 3px solid #000000;
@@ -385,7 +386,7 @@ footer {
 }
 
 #about {
-    background: #fff;
+    background: #fefff3;
     padding: 75px 15px;
     border-bottom: 3px solid #000000
 }
@@ -399,27 +400,29 @@ footer {
 
 
 #goal {
-    background: #fff;
+    background: #fefff3;
     padding: 75px 15px;
     border-bottom: 3px solid #000000
 }
 
 #about h2 {
-    color: #374054
+    color: #374054;
 }
 
 #about p {
     color: #8a7574;
-    margin: 0
+    margin: 0;
+    text-align: left;
 }
 
 #interest h2 {
-    color: #ffffff
+    color: #374054
 }
 
 #interest p {
-    color: #ffffff;
-    margin: 0
+    color: #8a7574;
+    margin: 0;
+    text-align: left;
 }
 
 #goal h2 {
@@ -428,7 +431,8 @@ footer {
 
 #goal p {
     color: #74808a;
-    margin: 0
+    margin: 0;
+    text-align: left;
 }
 
 #experience {
@@ -438,7 +442,7 @@ footer {
 }
 
 #experience h2 {
-    color: #ffffff
+    color: #000000
 }
 
 #experience-timeline {
@@ -456,7 +460,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #ff9100;
+    background: #ff9640;
     z-index: 0
 }
 
@@ -465,8 +469,8 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #ff9100;
-    background: linear-gradient(to bottom, #ff9100, rgba(52, 152, 219, 0));
+    background: #ff9640;
+    background: linear-gradient(to bottom, #ff9640, rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px
 }
@@ -482,7 +486,7 @@ footer {
 
 .vtimeline-content h3 {
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: bold;
     color: #374054;
     display: inline-block;
     margin: 0
@@ -490,7 +494,7 @@ footer {
 
 .vtimeline-content h4 {
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: bold;
     color: #7e8890;
     margin: 0 0 15px 0
 }
@@ -513,7 +517,7 @@ footer {
     color: #fff;
     width: 50px;
     height: 50px;
-    background: #ff9100;
+    background: #ff9640;
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -533,12 +537,12 @@ footer {
     left: 0;
     top: 10px;
     font-size: 20px;
-    font-weight: 300;
-    color: #ffffff
+    font-weight: bold;
+    color: #000000
 }
 
 #education {
-    background: #fff;
+    background: #fefff3;
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center
@@ -609,7 +613,8 @@ footer {
 }
 
 .project-image {
-    float: left
+    float: left;
+    padding: 30px
 }
 
 .project-info {
@@ -636,7 +641,7 @@ footer {
 }
 
 .project-info h5 {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 300;
     color: #374054;
     margin: 0 0 15px 0
@@ -660,7 +665,7 @@ footer {
 }
 
 #skills {
-    background: #fff;
+    background: #fefff3;
     padding: 50px 15px;
     text-align: center
 }
@@ -690,19 +695,22 @@ footer {
 
 #contact {
     padding: 50px 15px;
-    background: #000000;
+    background: #F9DE79;
     text-align: center
+    
 }
 
 #contact h2 {
-    margin: 0 0 15px 0;
-    color: #fff;
-    font-weight: 500
+    margin:30 0 15px 0;
+    color: #000000;
+    font-weight: bold
+    
 }
 
 #contact-form {
     max-width: 500px;
     margin: 0 auto
+    
 }
 
 #contact-form input,
