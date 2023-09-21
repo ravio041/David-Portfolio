@@ -13,7 +13,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    background:rgb(255, 245, 189);
+    background-image:url(../images/Cat-BG.png);
 }
 
 
@@ -97,7 +97,7 @@ header {
 
 header ul {
     display: inline-block;
-    background: #D0DD97;
+    background: #ffaa0c;
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -222,7 +222,7 @@ footer {
 
 .social li {
     display: inline-block;
-    font-size: 1.25em;
+    font-size: 30px;
     list-style: none
 }
 
@@ -233,7 +233,7 @@ footer {
 }
 
 .social a:hover {
-    color: #74808a
+    color: #ffc74d
 }
 
 .btn-rounded-white {
@@ -290,7 +290,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 500px;
-    background: url(../images/myself.png);
+    background: url(../images/cat-lay.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden
